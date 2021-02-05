@@ -1,4 +1,9 @@
-## 0.0.1 (2021-02-05)
+## 0.0.2 (2021-02-05)
+
+
+### Bug Fixes
+
+* **:bug::** regexp mistake ([fe99be3](https://github.com/SmileSmith/rollup-plugin-install/commit/fe99be33df824c4a915d74c017354eb503e9057a))
 
 
 ### Features
