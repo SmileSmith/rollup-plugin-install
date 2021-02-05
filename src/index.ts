@@ -29,7 +29,7 @@ export function autoInstallPlugin(optons?: AutoInstallOptions): Plugin {
       // 1. source校验
       if (
         !source || // 非空（保险点）
-        /^\W？[./]/.test(normalizeSource) || // 非相对路径
+        /^\W?[./]/.test(normalizeSource) || // 非相对路径
         normalizeSource.includes(npmDir) // 不含node_modules
       ) {
         return null;
