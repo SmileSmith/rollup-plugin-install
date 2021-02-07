@@ -35,7 +35,7 @@ export function autoInstallPlugin(optons?: AutoInstallOptions): Plugin {
         return null;
       }
       // 2. npm模块名处理&校验
-      const match = source.match(/^((@\w+\/)?.*?)\/?$/);
+      const match = source.match(/^((@\w+\/)?[^/]*)\/?.*$/);
       if (!match) {
         console.error("正则写错了o(╥﹏╥)o ... ", source, " 提个issue吧~");
         return null;
