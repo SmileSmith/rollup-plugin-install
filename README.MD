@@ -1,4 +1,12 @@
+[npm]: https://img.shields.io/npm/v/rollup-plugin-install
+[npm-url]: https://www.npmjs.com/package/rollup-plugin-install
+[size]: https://packagephobia.now.sh/badge?p=rollup-plugin-install
+[size-url]: https://packagephobia.now.sh/result?p=rollup-plugin-install
+
 # rollup-plugin-install
+
+[![npm][npm]][npm-url]
+[![size][size]][size-url]
 
 ## Usage
 
