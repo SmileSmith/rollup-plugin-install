@@ -14,16 +14,12 @@ interface AutoInstallOptions {
   bin?: "npm" | "yarn";
 }
 
-const npmDir = "node_modules";
-let npmRoot = __dirname;
-
 export function autoInstallPlugin(optons?: AutoInstallOptions): Plugin {
   const bin = optons?.bin || "npm";
+  const npmDir = "node_modules";
+  const npmRoot = tryGetPkgDir(__dirname);
   return {
     name: "auto-install",
-    buildStart() {
-      npmRoot = tryGetPkgDir(__dirname);
-    },
     resolveId(source, importer, options) {
       const normalizeSource = normalizePath(source);
       // 1. source校验
